@@ -3,4 +3,5 @@
 
 ## Object-Oriented Desing
 
-1. [Design vs Architecture](/1-Object-Oriented%20Design/design-vs-arch.md)
+1. [Intro](/1-Object-Oriented%20Design/intro.md)
+2. [Object Oriented Thinking](/thinking.md)
