@@ -13,7 +13,7 @@ Once you begin coding a solution and depend on certain assumptions, it can becom
 Eliciting requirements involves not only listening to what the client is telling you, but asking questions to clarify what the client has not told you.
 
 ## Conceptual Design
-The design activity involves taking requirements and outlining a solution. This activity involves producing a conceptual design and then a technical design, which results in two corresponding kinds of artifacts, conceptual mockups and technical diagrams.
+The design activity involves taking requirements and outlining a solution. This activity involves producing a conceptual design and then a technical design, which results in two corresponding kinds of artifacts, `conceptual mockups` and `technical diagrams`.
 
 Each component has a task it needs to perform, known as `responsibility`.
 
