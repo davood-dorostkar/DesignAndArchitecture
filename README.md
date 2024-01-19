@@ -14,3 +14,4 @@
 1. [Concepts](/1-Object-Oriented%20Design/concept.md)
 2. [Languages](/1-Object-Oriented%20Design/languages.md)
 3. [Four Design Principles](/1-Object-Oriented%20Design/four-des-principle.md)
+4. [Desing Principles in UML](/1-Object-Oriented%20Design/uml.md)
