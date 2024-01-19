@@ -69,3 +69,23 @@ One issue in decomposition involves the lifetimes of the `whole object`, and the
 You can have whole things contain parts that are shared among them `at the same time`. 
 
 Consider a person who has a daughter in one family, but also a spouse in another family. The two families are regarded as separate wholes, but they simultaneously share the same part. However, sometimes sharing is not possible or intended. 
+
+## Generalization
+Generalization helps us to reduce the amount of redundancy when solving problems. 
+
+Two techniques of generalization:
+### Methods for Generalization
+We can generalize repetitious code that we would need to write by making a separate method and `calling` it. This helps us to reduce the amount of near identical looking code throughout our system.
+
+### Classes for Generalization (Inheritance)
+Generalization can be achieved by classes through `inheritance`. In generalization we take repeated, common, or shared characteristics between two or more classes and factor them out into another class. 
+
+![](/img/generalization.png)
+
+the child class will have the attributes and behaviors of the parent class. You place common attribute and behaviors in your parent class. The child classes can also have additional attributes and behaviors, which allow them to be more specialized in what they can do.
+
+### Benefits
+- We can write programs that are capable of performing the same tasks but with` less code`. 
+- It makes code more `reusable` because different classes or methods can share the same blocks of code. 
+- Systems become easier to `maintain` because we do not have repetitious code. 
+- Generalization will help you build software that is easier to `expand`, easier to apply changes to and easier to maintain.
