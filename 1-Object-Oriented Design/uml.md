@@ -48,8 +48,6 @@ Converting code to Class Diagram is also straightforward.
 
 ![](/img/uml-to-code.png)
 
-## Abstraction
-Abstraction allows you to better understand a concept by breaking it down into a simplified description that ignores unimportant details. 
 
 ## Why ever use CRC
 Class Diagram still can't replace CRC card for simulating and prototyping different designs. 
@@ -59,3 +57,31 @@ CRC cards are `cheap and small`. It is easy to play with different designs with 
 Class Diagrams, on the other hand, are much closer to code as you have seen. This is great if you want to clearly communicate your `technical design` to the developers but since you have to specify code-specific things like parameter lists and return values, these are `too detailed` for `conceptual design`. 
 
 The details would be a `distraction` and `time-consuming` to describe when creating your initial designs. 
+
+## Abstraction
+Abstraction allows you to better understand a concept by breaking it down into a simplified description that ignores unimportant details. 
+
+## Encapsulation
+These minus signs indicate that a method or attribute is private. Private attributes can only be accessed from within the class.
+
+By only allowing an object's data to be manipulated via a public method, you can control how and when that data is accessed.
+
+>You only let access to data you allow. If your GPA was on a four point scale, you wouldn't want someone to be able to directly set the value to 10.  
+
+![](/img/private-uml.png)
+
+### Getter Methods
+Getter Methods are methods that retrieve data, and their names typically begin with get and end with the name of the attribute whose value you will be returning. Getters often retrieve a private piece of data. 
+
+### Setter Methods
+Setter Methods change data, and their names typically begin with set and end with the name of the variable you wish to set. Setters are used to set a private attribute in a safe way.
+
+>Data integrity is why you have Getter and Setter Methods. In order to change a piece of data, you need to go through the correct channels. Data must be accessed in an approved way.
+
+### Example
+whether or not an attribute or method is private or public influences its accessibility. Attributes that are private cannot be accessed from anywhere other than from inside the class. This hides them from anything outside of the class. The only way you can manipulate the hidden data is by writing public functions that allow access to it.
+
+![](/img/private-java.png)
+
+>The outside observer does not need to know how your public methods are implemented. Just that they perform as expected. That means you can add additional code to your Getters and Setters if you need to.
+
