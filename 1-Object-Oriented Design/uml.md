@@ -85,3 +85,65 @@ whether or not an attribute or method is private or public influences its access
 
 >The outside observer does not need to know how your public methods are implemented. Just that they perform as expected. That means you can add additional code to your Getters and Setters if you need to.
 
+## Decomposition
+There are three types of relationships found in decomposition:
+- association
+- aggregation
+- composition
+
+They define the interaction between the whole and the parts.
+
+### Association
+Association is **some** relationship. This means that there is a `loose` relationship between two objects. These objects may interact with each other for some time. For example, an object of a class may use services/methods provided by object of another class.
+
+**Association In UML**
+
+The straight line between two UML objects denotes that the relationship between them is an association. You can see that there is a `0..*` found on both sides of the relationship. This means a person object is associated with zero or more airline objects. And an airline object is associated with zero or more person objects.
+
+![](/img/association.png)
+
+>Each of them are completely separate entities. If one object is destroyed, the other can continue to exist, unlike human and organ. There can be any number of each item in the relationship. One object does not belong to another.
+
+**Association In Code**
+
+ In this code, the student is passed a sport object to play. The student does not possess the sport beyond playing it. The relationship is between two completely separate objects. A student can play any number of sports. And any number of students can play a sport.
+
+![](/img/association-java.png)
+
+### Aggregation
+Aggregation is a `has-a` relationship where a whole has parts that belong to it. There may be sharing of parts among the wholes in this relationship. The `has-a` relationship from the whole to the parts is considered `weak`. What this means is although parts can belong to the wholes, they can also exist independently.
+
+These entities have a relationship, but can exist outside of it.
+
+**Aggregation in UML**
+
+This UML says that for an airliner object, it has zero or more crew members. Also, a crew member object can be had by zero or more airline objects. The `empty diamond` denotes which object is considered the `whole` and not the part in the relationship.
+
+![](/img/aggregation-uml.png)
+
+**Aggregation in code**
+
+These are two objects that have a weak has-a relationship. The pet store has a list of pets that can contain zero or more pets. It has the ability to add pets at any time. Both pets stores and pets can exist without each other.
+
+![](/img/aggragation-java.png)
+
+### Composition
+Composition is an exclusive containment of parts, otherwise known as a `strong has-a` relationship. What this means is that the whole cannot exist without its parts. If loses any of its parts, the whole ceases to exist. If the whole is destroyed, then all of its parts are destroyed too. Usually, you can only access the parts through its whole. Contained parts are exclusive to the whole.
+
+**Composition in UML**
+
+This UML describes the relationship between a house and a room, that a house object has `one or more` room objects. The `filled in diamond` next to the house means that the house is the `whole` in the relationship. If the diamond is filled in, it means that has-a relationship is `strong`. The two related objects cannot exist without each other.
+
+![](/img/composition-uml.png)
+
+**Composition in code**
+
+In this example, the brain is `created at the same time` that the human object is. The brain does not need to be `instantiated anywhere` else, nor does it need to `be passed` into the human object on creation. The brain is `automatically created` with the human. The two parts, human and brain, are tightly dependent with one not being able to exist without the other.
+
+![](/img/composition-java.png)
+
+**Another Example**
+
+The employee cannot exist without a salary. And the salary cannot exist without an employee. On instantiating an employee, the salary part is made. The salary must always exist as long as the employee does from that point on.
+
+![](/img/composition-java2.png)
