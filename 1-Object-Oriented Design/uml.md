@@ -147,3 +147,106 @@ In this example, the brain is `created at the same time` that the human object i
 The employee cannot exist without a salary. And the salary cannot exist without an employee. On instantiating an employee, the salary part is made. The salary must always exist as long as the employee does from that point on.
 
 ![](/img/composition-java2.png)
+
+## Generalization with Inheritance
+You simply connect two classes with a solid lined arrow. This indicates, that two classes are connected by inheritance. the superclasses are always toward the top, and the subclasses are always toward the bottom. 
+
+>You do not need to put any of the inherited superclasses attributes and behaviors into the subclass. 
+
+![](/img/gen-inherit.png)
+
+>The `hash` symbol is used to communicate that the animals attributes are protected. 
+
+### Protected term
+In Java, a `protected` attribute or method can only be accessed by, 
+- the encapsulating class itself, 
+- all subclasses, 
+- all classes within the same package. In Java, a `package` is simply a means in which the classes can be organized into a `namespace` that represents those classes. 
+
+### abstract term
+Since an animal is a generalization of specific species, we do not want to be able to create an animal object on its own. We use the keyword `abstract` to declare that this class cannot be `instantiated`. That means that we cannot create an animal object. 
+
+![](/img/abstract.png)
+
+### extends term
+We declare `inheritance` in Java using the keyword `extends`.
+
+![](/img/extends.png)
+
+### Constructors
+Classes can have `implicit` constructors or `explicit` constructors. 
+- In implicit constructor all attributes are assigned zero or null, when using the default constructor. 
+  
+  ![](/img/impl-constr.png)
+
+- Explicit constructors, are use of that we can assign values to attributes during instantiation. 
+  
+  ![](/img/expl-constr.png)
+
+>A subclass's constructor must call its superclass's constructor, if the superclass has an explicit constructor. This is because explicit constructors of the superclass must be referenced by the subclass. Otherwise the superclass attributes would not be appropriately initialized. 
+
+### super term 
+In order to access the superclass's attributes, methods and constructors, the subclass uses the keyword called Super.
+
+![](/img/super.png)
+
+### overriding methods
+Subclasses can override the methods of its superclass, meaning that a subclass can provide its own implementation for an inherited superclass's method. 
+
+![](/img/overriding.png)
+
+### Multiple Inheritance in Java
+For Java, only single implementation inheritance is allowed. Well a superclass can have multiple subclasses. A subclass can only inherit from one superclass. 
+
+## Generalization with Interfaces
+Unlike a class, however, an interface only declares method signatures, and no constructors, attributes, or method bodies. It specifies the expected behaviors in the method signatures, but does not provide any implementation details. 
+
+So, an interface is like a contract to be fulfilled by implementing classes. In both inheritance and interfaces, you achieve consistency between the dog type and the animal type.
+
+Unlike inheritance, interfaces are not a generalization of a set of classes. It is important to understand that interfaces are not classes. They are used to describe behaviors. All that an interface contains are method signatures. 
+
+### Interface in code
+In JAVA, we use the key word interface to indicate that we are creating one. Standard JAVA naming convention places the letter I before an actual name to indicate an interface. 
+
+- We only show that an animal has these behaviors.
+- the interface does not encapsulate any of the attributes of an animal. 
+
+![](/img/interface.png)
+
+### implements term
+Our dog class has declared that it will implement or describe the behaviors that are in the interface. When you do this, you must have all the method signatures explicitly declared and implemented in the class.
+
+![](/img/implements.png)
+
+### Interfaces in UML
+Interfaces are explicitly noted in UML class diagrams using guillemets, to surround the words `interface`. The interaction between an interface and a class that is implementing the interface is indicated using a `dotted arrow`. 
+
+![](/img/interface-uml.png)
+
+### Interface Inheritance
+Just like with class inheritance, interfaces can inherit from other interfaces. And just like with class inheritance, interface inheritance should not be abused.
+
+**Example**
+
+what if we need to implement the movement of a plane or a submarine that can also move in the zed-axis? We do not want to add an extra behavior to the interface, because on-land and on-water vehicles do not move along the zed-axis. So We can create a second interface that will inherit from our first one.
+
+![](/img/super-interface.png)
+
+![](/img/interface-inherit.png)
+
+Now, we can use the IVehicleMovement3D interface for all vehicles that have three-dimensional movement without having to add the Zed-axis movement to the interface used by the on-land and on-water vehicles.
+
+ ### Interface advantages
+1. Like abstract classes, which are classes that cannot be instantiated, interfaces are a means in which you can implement `polymorphism`. 
+
+In object oriented languages, polymorphism is when two classes have the same description of a behavior, but the implementations of the behavior may be different. It is simple to achieve in JAVA using an interface.
+
+2. `multiple inheritance` is when a subclass has two or more super classes. While this is possible to do with other object oriented languages, like C++, JAVA doesn't support Multiple Inheritance. 
+   
+   >This is because inheriting from two or more superclasses can cause Data Ambiguity. When your subclass inherits from two or more superclasses that have attributes with the same name or behaviors with the same method signature, how do you distinguish between them? 
+
+   Interfaces do not run into this issue. In JAVA, a class can implement as many interfaces as we want. This is because of the nature of interfaces. 
+
+![](/img/multi-inherit.png)
+
+![](/img/class-interface.png)
