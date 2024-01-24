@@ -6,7 +6,10 @@ CRC cards are only good for prototyping and simulating higher level designs.
 
 additional details can be represented in a Class Diagram compared to a CRC card.
 
-## UML Parts
+## Abstraction
+Abstraction allows you to better understand a concept by breaking it down into a simplified description that ignores unimportant details. 
+
+### UML Parts
 Each class in the Class Diagram is represented by a box. Each box is divided in three sections:
 - The top part is the Class Name. 
 - The middle part is the Property section. This would be equivalent to the member variables in your Java class and defines the attributes of the abstraction. 
@@ -58,8 +61,6 @@ Class Diagrams, on the other hand, are much closer to code as you have seen. Thi
 
 The details would be a `distraction` and `time-consuming` to describe when creating your initial designs. 
 
-## Abstraction
-Abstraction allows you to better understand a concept by breaking it down into a simplified description that ignores unimportant details. 
 
 ## Encapsulation
 These minus signs indicate that a method or attribute is private. Private attributes can only be accessed from within the class.
