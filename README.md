@@ -1,6 +1,8 @@
 ![](/img/desing-architecture.jpg)
 # Software Design And Architecture
 
+Prerequisite: [Java Setup](/1-Object-Oriented%20Design/java.md)
+
 ## 1. Object-Oriented Desing
 
 ### Object-Oriented Analysis and Design
