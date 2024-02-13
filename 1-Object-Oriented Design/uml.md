@@ -28,6 +28,8 @@ Each class in the Class Diagram is represented by a box. Each box is divided in 
 
     ![](/img/param-uml.png)
 
+>An abstract method, variable, or class name is denoted in UML with `italics`.
+
 ![](/img/uml-abstract.png)
 
 
