@@ -17,3 +17,8 @@ Prerequisite: [Java Setup](/1-Object-Oriented%20Design/java.md)
 2. [Languages](/1-Object-Oriented%20Design/languages.md)
 3. [Four Design Principles](/1-Object-Oriented%20Design/four-des-principle.md)
 4. [Desing Principles in UML](/1-Object-Oriented%20Design/uml.md)
+
+### Design Principles
+1. [Coupling and Cohesion](/1-Object-Oriented%20Design/coupling.md)
+2. [Separation of Concerns](/1-Object-Oriented%20Design/sep-concern.md)
+3. [Information Hiding](/1-Object-Oriented%20Design/info-hiding.md)
