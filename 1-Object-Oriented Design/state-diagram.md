@@ -41,6 +41,8 @@ When an object is in a certain state, it behaves in specific ways or has attribu
 5. `Termination` represents an object being destroyed, or the process being completed, and is drawn as a circle with a `filled circle inside`. For example, when using a bank machine, you can represent it returning your card at the end of the process and thus ending in termination. 
    >Not all diagrams have a termination like the vending machine, they may run continuously.
 
+   ![](/img/state-termination.png)
+
 ## Example
 
 ![](/img/state-example.png)

@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLSpecialState</id><coordinates><x>83</x><y>162</y><w>18</w><h>18</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>173</x><y>153</y><w>126</w><h>45</h></coordinates><panel_attributes>waiting
+
+valign=top
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>92</x><y>162</y><w>99</w><h>27</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>542</x><y>144</y><w>162</w><h>54</h></coordinates><panel_attributes>assigned
+--
+flightNumber
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>153</y><w>270</w><h>36</h></coordinates><panel_attributes>lt=-&gt;
+chosen/setFlightNumber()</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>Relation</id><coordinates><x>695</x><y>162</y><w>189</w><h>216</h></coordinates><panel_attributes>lt=-&gt;
+m1=readyToTakeOff/takeOff()</panel_attributes><additional_attributes>10;10;190;10;190;220</additional_attributes></element><element><id>UMLState</id><coordinates><x>776</x><y>360</y><w>135</w><h>72</h></coordinates><panel_attributes>en route
+--
+flightNumber
+--
+do fly()
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>378</y><w>234</w><h>36</h></coordinates><panel_attributes>lt=-&gt;
+reachedDestination/landing()</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>434</x><y>360</y><w>135</w><h>72</h></coordinates><panel_attributes>landed
+--
+flightNumber
+--
+do checkPlane()
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>236</x><y>189</y><w>216</w><h>216</h></coordinates><panel_attributes>lt=-&gt;
+m1=checked[doesnt need repair]</panel_attributes><additional_attributes>220;210;10;210;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>146</x><y>405</y><w>306</w><h>36</h></coordinates><panel_attributes>lt=-&gt;
+checked[needs repair]</panel_attributes><additional_attributes>320;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>92</x><y>432</y><w>171</w><h>117</h></coordinates><panel_attributes>lt=-&gt;
+checked[cannot be repaired]</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLState</id><coordinates><x>38</x><y>378</y><w>117</w><h>63</h></coordinates><panel_attributes>maintenance
+--
+do maintenance()
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>101</x><y>189</y><w>126</w><h>207</h></coordinates><panel_attributes>lt=-&gt;
+m1=repaired</panel_attributes><additional_attributes>10;210;10;140;120;140;120;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>92</x><y>531</y><w>18</w><h>18</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element></diagram>
