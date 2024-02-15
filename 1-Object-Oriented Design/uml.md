@@ -1,10 +1,18 @@
-# Desing Principles in UML
+# Desing Principles in UML/Code
 
 A UML Class Diagram, or just Class Diagram for short, allows you to represent your design in more detail than CRC cards can but it's still visual. Class Diagrams are much closer to the implementation and can easily be converted to classes in code.
 
 CRC cards are only good for prototyping and simulating higher level designs.
 
 additional details can be represented in a Class Diagram compared to a CRC card.
+
+The four main design principles are:
+- [Abstraction](#abstraction)
+- [Encapsulation](#encapsulation)
+- [Decomposition](#decomposition)
+- Generalization
+  - [With Inheritance](#generalization-with-inheritance)
+  - [With Interfaces](#generalization-with-interfaces)
 
 ## Abstraction
 Abstraction allows you to better understand a concept by breaking it down into a simplified description that ignores unimportant details. 
