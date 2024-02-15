@@ -10,6 +10,9 @@ The four main design principles are:
 - [Abstraction](#abstraction)
 - [Encapsulation](#encapsulation)
 - [Decomposition](#decomposition)
+  - [Association](#association)
+  - [Aggregation](#aggregation)
+  - [Composition](#composition)
 - Generalization
   - [With Inheritance](#generalization-with-inheritance)
   - [With Interfaces](#generalization-with-interfaces)
