@@ -1,4 +1,10 @@
 # Four Design Principles
+The four main design principles are:
+- [Abstraction](#abstraction)
+- [Encapsulation](#encapsulation)
+- [Decomposition](#decomposition)
+- [Generalization](#generalization)
+
 
 ## Abstraction
 Abstraction is one of the main ways that humans deal with complexity. Abstraction is the idea of simplifying a concept in the problem domain to its `essentials` within some context. Abstraction allows you to better understand a concept by breaking it down into a simplified description that ignores `unimportant details`. 
